@@ -1,0 +1,469 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	height: 100%;
+	width: 100%;
+	background: #ffffff;
+	color: #000000;
+	font-family: Arial, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+
+
+/* Start Navbar Section */
+.navbar {
+	background: rgba(255, 255, 255, 0.75);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 25px 10px 25px;
+}
+
+.navbar span {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navbar .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 7px;
+	padding: 2px 3px;
+	cursor: pointer;
+	position: relative;
+    text-decoration: none;
+	font-weight: 600;
+}
+
+.navbar .menu li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1.5px;
+    background: #000000;
+    transition: width 0.3s ease;
+}
+.navbar .menu li:hover::after {
+    width: 100%;
+}
+.navbar .menu li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.navbar .social li a {
+	color: #000000;
+	font-size: 22px;
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+.navbar .social li a:hover {
+	transform: scale(1.2);
+}
+/* End Navbar Section */
+
+
+
+/* Start Intro Section */
+.intro {
+	width: 100%;
+	height: 120vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../img/intro.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro h1 {
+	font-size: 45px;
+	margin-top: -50px;
+}
+.intro p {
+	font-size: 16px;
+	margin: 15px 0;
+	text-align: center;
+}
+.intro button {
+	background: #ffffff;
+	color: #000000;
+	border: none;
+	border-bottom: 2px solid #000000;
+	border-radius: 2px;
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+/* End Intro Section */
+
+
+
+/* Start About Section */
+.about {
+	width: 90%;
+	margin: 0 auto;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-120px);
+}
+
+.about .about-text {
+	background: #6a67c8;
+	flex: 1;
+	border-right: 3px solid #bebcf9;
+	padding: 70px 60px;
+}
+.about .about-text h3 {
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+.about .about-text p {
+	margin: 20px 0;
+	font-size: 16px;
+	line-height: 1.3;
+}
+
+.about .about-time {
+	background: #6a67c8;
+	flex: 1;
+	padding: 70px 60px;
+}
+.about .about-time h3 {
+	font-size: 22px;
+	font-weight: 600;
+}
+.about .about-time table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+.about .about-time table .yellow {
+	color: #ffcd17;
+}
+.about .about-time table tr:nth-child(even) {
+	background: #1059ce;
+	border: 1px solid #0953ca;
+	border-bottom: 2px solid #0642a3;
+}
+.about .about-time table tr td {
+	padding: 12px 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.about .about-time table tr td:first-child {
+	text-align: left;
+}
+.about .about-time table tr td:last-child {
+	text-align: right;
+}
+/* End About Section */
+
+
+
+/* Start Service Section */
+.service {
+	background: #d8e4fe;
+	padding: 50px 100px;
+	transform: translateY(220px);
+	margin-bottom: 220px;
+}
+
+.service-items {
+	display: flex;
+	justify-content: space-between;
+	transform: translateY(-250px);
+}
+.service-items .item {
+	background: #ffffff;
+	text-align: center;
+	margin: 0 50px;
+	padding: 40px 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.service-items .item .service-icon {
+	font-size: 100px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.service-items .item h3 {
+	font-size: 22px;
+	font-weight: 800;
+	margin: 10px 0;
+}
+.service-items .item button {
+	background: none;
+	color: #003a9f;
+	border:  none;
+	border-bottom: 2px solid #003a9f89;
+	margin-top: 30px;
+	padding: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.service-items .item button:hover {
+	border-bottom: 2px solid #003a9f;
+}
+
+.service-content {
+	display: flex;
+	transform: translateY(-50px);
+}
+.service-content .service-image {
+	width: 50%;
+}
+.service-content .service-image img {
+	height: auto;
+	width: 80%;
+}
+.service-content .service-details h3 {
+	margin: 20px 0;
+	font-size: 25px;
+	font-weight: 800;
+}
+.service-content .service-details ul {
+	list-style: none;
+}
+.service-content .service-details ul li {
+	line-height: 40px;
+}
+.service-content .service-details ul li::before {
+	content: '\27a4';
+	margin-right: 5px;
+}
+.service-content .service-details button {
+	background: #ffffff;
+	color: #000000;
+	border: none;
+	border-bottom: 2px solid #000000;
+	border-radius: 2px;
+	margin-top: 30px;
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+/* End Service Section */
+
+
+
+/* Start Doctor Section */
+.doctor {
+	padding: 100px 50px;
+}
+.doctor h3,
+.news h3 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.doctor-items {
+	display: flex;
+}
+.doctor-items .item {
+	flex: 1;
+	width: 33.333%;
+	background: linear-gradient(to top, #ffffff, #d8e4fe);
+	text-align: center;
+	margin: 0 50px;
+	padding: 40px 40px 20px 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.doctor-items .item img {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 4px solid #6a67c8;
+	border-radius: 5px;
+}
+.doctor-items .item h3 {
+	font-size: 22px;
+	font-weight: 800;
+	margin: 2px 0;
+}
+.doctor-items .item h5 {
+	color: #000000b0;
+	font-size: 15px;
+}
+.doctor-items .item p {
+	padding: 20px 0;
+}
+.doctor-items .item ul {
+	list-style: none;
+	margin-top: 10px;
+}
+.doctor-items .item ul li {
+	display: inline-block;
+	margin: 0 2px;
+	padding: 5px;
+}
+.doctor-items .item ul li a {
+	color: #000000;
+	font-size: 22px;
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+.doctor-items .item ul li a:hover {
+	transform: scale(1.2);
+}
+/* End Doctor Section */
+
+
+
+/* Start News Section */
+.news {
+	padding: 50px 50px 100px 50px;
+}
+
+.news-content {
+	display: flex;
+}
+
+.news-image,
+.news-items {
+	flex: 1;
+	width: 50%;
+	text-align: center;
+}
+.news-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.news-image img {
+	width: 90%;
+	height: auto;
+}
+
+.news-items {
+	padding: 0 40px;
+}
+.news-items .item {
+	text-align: left;
+	margin: 40px 0;
+	padding: 0 20px;
+	border-left: 4px solid #0953ca;
+}
+.news-items .item h3 {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+	margin-bottom: 0;
+}
+.news-items .item h5 {
+	color: #000000b0;
+}
+.news-items .item span {
+	background: #0953ca;
+	color: #ffffff;
+	margin-left: 5px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+.news-items .item p {
+	padding: 5px 0;
+}
+.news-items .item button {
+	background: none;
+	border:  none;
+	border-bottom: 2px solid #003a9f89;
+	margin-top: 5px;
+	padding: 2px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.news-items .item button:hover {
+	border-bottom: 2px solid #003a9f;
+}
+/* End News Section */
+
+
+
+/* Start Contact Section */
+.contact {
+	background: #6a67c8;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+}
+.contact h3 {
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.contact button {
+	background: #000000;
+	color: #ffffffd0;
+	border: none;
+	border-bottom: 2px solid #ffffffd8;
+	border-radius: 2px;
+	margin-top: 20px;
+	padding: 15px 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+/* End Contact Section */
+
+
+
+/* Start Footer Section */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	padding: 30px 50px;
+}
+footer div {
+	flex: 0 0 25%;
+	width: 25%;
+}
+
+footer ul{
+	text-align: right;
+}
+footer ul li {
+	display: inline-block;
+}
+footer ul li a {
+	font-size: 35px;
+	margin: 0 5px;
+}
+footer ul li a i {
+	transition: transform 0.3s ease;
+}
+footer ul li a i:hover {
+	transform: scale(1.2);
+}
+/* End Footer Section */
