@@ -24,7 +24,7 @@
 }
 .navbar .menu.active {
 	max-height: 300px;
-	padding: 15px 0;
+	padding: 5px 0;
 }
 
 .navbar .menu li {
@@ -45,7 +45,8 @@
 }
 
 .intro h1 {
-	font-size: 30px;
+	font-size: 25px;
+	font-weight: 900;
 }
 /* End Intro Section */
 
@@ -60,11 +61,11 @@
 .about .about-text {
 	border-right: 0;
 	border-bottom: 3px solid #bebcf9;
-	padding: 50px;
+	padding: 50px 40px;
 }
 
 .about .about-time {
-	padding: 50px;
+	padding: 50px 40px;
 }
 /* End About Section */
 
@@ -72,7 +73,7 @@
 
 /* Start Service Section */
 .service {
-	padding: 50px;
+	padding: 50px 30px;
 	transform: translateY(0);
 	margin-bottom: 0;
 }
@@ -82,7 +83,7 @@
 	transform: translateY(0);
 }
 .service-items .item {
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 .service-content {
@@ -107,7 +108,7 @@
 
 /* Start Doctor Section */
 .doctor {
-	padding: 70px 50px;
+	padding: 70px 30px;
 }
 .doctor h3 {
 	margin-bottom: 20px;
@@ -126,7 +127,7 @@
 
 /* Start News Section */
 .news {
-	padding: 50px;
+	padding: 50px 30px;
 }
 
 .news-content {
@@ -145,6 +146,9 @@
 .news-items {
 	padding: 0;
 }
+.news-items .item h3 {
+	font-size: 20px;
+}
 /* End News Section */
 
 
@@ -155,7 +159,8 @@
 	padding: 50px 30px;
 }
 .contact h3 {
-	font-size: 23px;
+	font-size: 18px;
+	font-weight: 900;
 	margin-bottom: 15px;
 }
 /* End Contact Section */
@@ -166,7 +171,7 @@
 footer {
 	flex-wrap: wrap;
 	margin-top: 50px;
-	padding: 30px;
+	padding: 10px 30px;
 	text-align: center;
 }
 
